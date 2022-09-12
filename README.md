@@ -57,7 +57,7 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
-- Thanks to the original designer idea by Cindy Shin in Behance.
+- Thanks to the original designer idea by [Cindy Shin in Behance](https://www.behance.net/adagio07).
 
 
 ## 📝 License
