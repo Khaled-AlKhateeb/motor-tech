@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Motor Tech | Home</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="main-container">
+      <header class="main-header">
+        <nav class="navigation">
+          <a class="logo-link" href="#"
+            ><img
+              class="logo-img"
+              src="Assets/logo-fococlipping-standard.jpeg"
+              alt="motor tech logo"
+          /></a>
+          <button class="menu-btn" onclick="openNav()">
+            <i class="fa-solid fa-3x fa-car"></i>
+          </button>
+          <ul id="navList" class="nav-list">
+            <li class="nav-item">
+              <a
+                href="javascript:void(0)"
+                id="menuClose"
+                class="menu-close"
+                onclick="closeNav()"
+              >
+                <i class="fa-solid fa-1x fa-xmark"></i>
+              </a>
+            </li>
+            <li class="nav-item"><a href="">About</a></li>
+            <li class="nav-item">Program</li>
+            <li class="nav-item">Join</li>
+            <li class="nav-item">Sponsor</li>
+            <li class="nav-item">News</li>
+          </ul>
+        </nav>
+        <div class="header-content">
+          <span class="welcome-title">"Hello! Sharing world"</span>
+          <h1 class="main-title">creative commons global summit 2015</h1>
+          <p class="main-description">
+            A joyful celebration believing in the value of openness and sharing,
+            creating a positive change with people from over 80 countries is
+            taking place on October, in Korea.
+          </p>
+          <h2 class="event-title">2015.10.15(THU) ~ 16(FRI)</h2>
+          <p class="event-description">
+            @ National Museum of Korea, Art Center Nabi and more
+          </p>
+        </div>
+      </header>
+      <section class="main-program">
+        <h2 class="program-title">Main Program</h2>
+        <hr class="program-divider" />
+        <ul class="program-list">
+          <li class="program-item">
+            <div class="mini-program">
+              <i class="p-icon fa-solid fa-gas-pump"></i>
+              <h3 class="p-item-title">news</h3>
+            </div>
+            <p class="program-description">Listen to the speakers from various vountries about the messeges of sharing and opening</p>
+          </li>
+          <li class="program-item">
+            <div class="mini-program">
+              <i class="p-icon fa-solid fa-warehouse"></i>
+              <h3 class="p-item-title">gallary</h3>
+            </div>
+            <p class="program-description">Appreciate varius creations applying CC license of artists, organized from Art Center Nabi</p>
+          </li>
+          <li class="program-item">
+            <div class="mini-program">
+              <i class="p-icon fa-solid fa-car-battery"></i>
+              <h3 class="p-item-title">car culture</h3>
+            </div>
+            <p class="program-description">Have the time to share your thoughts and opinions with experts for each topic</p>
+          </li>
+          <li class="program-item">
+            <div class="mini-program">
+              <i class="p-icon fa-solid fa-gears"></i>
+              <h3 class="p-item-title">gear</h3>
+            </div>
+            <p class="program-description">Try creating your own work using open source license rather than just watching</p>
+          </li>
+          <li class="program-item">
+            <div class="mini-program">
+              <i class="p-icon fa-4x fa-solid fa-gauge"></i>
+              <h3 class="p-item-title">racing</h3>
+            </div>
+            <p class="program-description">Get opportunities to network with CC affiliates around the world, also after the summit.</p>
+          </li>
+        </ul>
+        <button class="join-btn">Join CC Global Summit 2015</button>
+      </section>
+      <section class="speakers">
+        <h2 class="speakers-title">Featured Speakers</h2>
+        <hr class="speakers-divider">
+        <ul class="speakers-list">
+          <li class="speakers-item">
+            <div class="speakers-graphic">
+              <img class="chequered-flag" src="Assets/f1-fin.gif" alt="chequered flag">
+              <img class="cars-logo" src="Assets/koeingsegg-logo.jpg" alt="koenigsegg logo">
+            </div>
+            <div class="speakers-text">
+              <h3 class="speaker-name">Yochai Benkler</h3>
+              <h4 class="speaker-info">Berkman Professor of Enterpreneurial Legal Studies at Harvard Law School</h4>
+              <hr class="speaker-divider">
+              <p class="speaker-bio">Benkler studies commons-based peer production, and published hos seminal book The Wealth of Networks in 2006</p>
+            </div>
+          </li>
+        </ul>
+        <button class="more-btn">More<i class="fa-solid fa-chevron-down"></i>
+        </button>
+      </section>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

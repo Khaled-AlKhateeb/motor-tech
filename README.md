@@ -2,14 +2,14 @@
 
 # Project Name
 
-> Description the project.
+Motor Technologies
 
 
 ## Built With
 
-- Major languages
-- Frameworks
-- Technologies used
+- HTML/ CSS/ JavaScript
+- Linters
+- 
 
 ## Live Demo (if available)
 
@@ -17,46 +17,39 @@
 
 
 ## Getting Started
-
-**This is an example of how you may give instructions on setting up your project locally.**
-**Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.**
-
+On your git paste the following command line:
+git clone https://github.com/Khaled-AlKhateeb/motor-tech.git
 
 To get a local copy up and running follow these simple example steps.
 
 ### Prerequisites
-
+HTML/ CSS
 ### Setup
-
+Not needed
 ### Install
-
+Not needed
 ### Usage
-
+Responsive Website
 ### Run tests
-
+Linters
 ### Deployment
-
+Mobile and desktop browsers
 
 
 ## Authors
 
-👤 **Author1**
+👤 **Khaled Al-Khateeb**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+- GitHub: [@githubhandle](https://github.com/Khaled-AlKhateeb)
+- Twitter: [@twitterhandle](https://twitter.com/KhaledA93751489)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/khaled-al-khateeb-3a1013247/)
 
-👤 **Author2**
-
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
 
 ## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](../../issues/).
+Feel free to check the [issues page](https://github.com/Khaled-AlKhateeb/motor-tech/issues).
 
 ## Show your support
 
@@ -64,9 +57,8 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
-- Hat tip to anyone whose code was used
-- Inspiration
-- etc
+- Thanks to the original designer idea by [Cindy Shin in Behance](https://www.behance.net/adagio07).
+
 
 ## 📝 License
 

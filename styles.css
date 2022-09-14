@@ -1,0 +1,468 @@
+:root {
+  font-family: "Lato", sans-serif;
+  --dark: #272a31;
+  --primary: #ec5242;
+  --light: #d3d3d3;
+}
+
+body {
+  margin: 0;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+  color: inherit;
+}
+
+li {
+  list-style: none;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.main-header {
+  background-image: url(Assets/motor-tech-background.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  padding: 0.8rem;
+}
+
+.navigation {
+  display: flex;
+  padding: 0.5rem 1rem;
+  justify-content: space-between;
+}
+
+.logo-link {
+  display: none;
+}
+
+.logo-img {
+  width: 15rem;
+}
+
+.menu-btn {
+  background-color: transparent;
+  border: none;
+}
+
+.menu-btn:hover .fa-car {
+  color: var(--primary);
+}
+
+.nav-list .menu-close {
+  position: absolute;
+  top: 0;
+  right: 1.5rem;
+  margin: 3.5rem;
+}
+
+.close-icon {
+  fill: var(--light);
+}
+
+.nav-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  margin: 0;
+  padding-top: 2rem;
+  padding-inline-start: 0;
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  overflow-x: hidden;
+  background-color: var(--dark);
+  transition: 0.5s;
+}
+
+.nav-item {
+  padding: 0.5rem 0.5rem 0.5rem 1rem;
+  color: var(--light);
+  font-size: 1.5rem;
+  display: block;
+  transition: 0.3s;
+}
+
+.nav-item:hover {
+  color: var(--primary);
+}
+
+.header-content {
+  display: flex;
+  flex-direction: column;
+  padding-top: 2rem;
+}
+
+.welcome-title {
+  color: var(--primary);
+  font-size: 1.4rem;
+  font-weight: 700;
+  letter-spacing: 0.05rem;
+}
+
+.main-title {
+  font-weight: 900;
+  font-size: 3rem;
+  background-image: url(Assets/wallpaperflare.com_wallpaper.jpg);
+  background-position: right -350px top -520px;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-transform: uppercase;
+}
+
+.main-description {
+  background-color: var(--light);
+  padding: 0.7rem;
+  font-size: 1.1rem;
+  font-weight: 500;
+  line-height: 1.8rem;
+  border: 0.3rem solid rgba(255, 255, 255, 0.521);
+}
+
+.event-title {
+  font-size: 2rem;
+  font-weight: 900;
+  color: var(--light);
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.event-description {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: var(--light);
+  margin: 0;
+}
+
+.main-program {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url(Assets/program-background.jpg);
+}
+
+.program-title {
+  margin-top: 2rem;
+  color: var(--light);
+}
+
+.program-divider {
+  border-color: var(--primary);
+  width: 4rem;
+  margin-bottom: 2rem;
+}
+
+.program-list {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  gap: 1rem;
+}
+
+.program-item {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  gap: 1.2rem;
+  background-color: rgba(77, 77, 77, 0.6);
+  color: var(--light);
+}
+
+.mini-program {
+  max-width: 11rem;
+  display: grid;
+  grid-auto-flow: column;
+  gap: 1rem;
+  align-items: center;
+}
+
+.p-icon {
+  width: 6rem;
+  font-size: 3rem;
+  color: var(--light);
+  text-align: center;
+  justify-content: center;
+}
+
+.p-item-title {
+  width: 4rem;
+  text-transform: uppercase;
+  color: var(--primary);
+  font-size: 1.2rem;
+  font-weight: 600;
+  flex-wrap: wrap;
+}
+
+.program-description {
+  padding-left: 15px;
+}
+
+.join-btn {
+  margin: 3rem;
+  background-color: var(--primary);
+  border: none;
+  color: var(--light);
+  padding: 2rem 2.5rem;
+  font-size: 24px;
+}
+
+.join-btn:hover {
+  background-color: var(--light);
+  color: var(--primary);
+}
+
+.speakers {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+}
+
+.speakers-divider {
+  width: 4rem;
+  border-color: var(--primary);
+  margin: 0 0 2rem 0;
+}
+
+.speakers-list {
+  padding: 0;
+}
+
+.speakers-item {
+  display: flex;
+}
+
+.speakers-graphic {
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+.chequered-flag {
+  position: relative;
+  top: 0;
+  width: 6rem;
+  left: 0;
+}
+
+.cars-logo {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  width: 10rem;
+}
+
+.speakers-text {
+  display: flex;
+  flex-direction: column;
+  margin-left: 7rem;
+}
+
+.speaker-name {
+  font-weight: 800;
+  margin: 0;
+  font-size: 1.3rem;
+}
+
+.speaker-info {
+  margin: 1rem 0;
+  color: var(--primary);
+  font-style: italic;
+}
+
+.speaker-divider {
+  width: 2rem;
+  margin: 0;
+  border-color: var(--light);
+}
+
+.speaker-bio {
+  letter-spacing: -0.06rem;
+}
+
+.more-btn {
+  width: 100%;
+  height: 4rem;
+  border: 2px solid var(--light);
+  border-radius: 4px;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+}
+
+.fa-chevron-down {
+  padding-left: 1rem;
+  color: var(--primary);
+}
+
+.main-header-about {
+  background-image: url(Assets/tire-burnout.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  padding: 0.8rem;
+}
+
+.main-title-about {
+  font-weight: 900;
+  font-size: 3rem;
+  color: var(--primary);
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.welcome-title-about {
+  color: var(--primary);
+  font-size: 1.4rem;
+  font-weight: 700;
+  letter-spacing: 0.05rem;
+  text-align: center;
+}
+
+.main-description-about {
+  background-color: var(--light);
+  padding: 0.7rem;
+  font-size: 1.1rem;
+  font-weight: 500;
+  line-height: 1.8rem;
+  border: 0.2rem solid rgba(44, 44, 44, 0.164);
+}
+
+.event-description-about {
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: 700;
+  text-shadow: 0 0 3px #ffffff, 0 0 5px #ffffff;
+  color: var(--dark);
+  margin: 0;
+}
+
+.about-sec {
+  text-align: center;
+}
+
+.about-divider {
+  border-color: var(--primary);
+  width: 2rem;
+  margin-bottom: 2rem;
+}
+
+.logo-about {
+  margin: 2rem 0;
+  width: 80%;
+  border: 1px solid var(--light);
+  padding: 2rem;
+}
+
+.past-container {
+  text-align: center;
+  border-top: 1px solid var(--light);
+}
+
+.past-text {
+  font-weight: 600;
+}
+
+.img-past-container {
+  position: relative;
+  color: white;
+  margin-bottom: 1rem;
+}
+
+.past-img {
+  filter: sepia(80%) hue-rotate(320deg) saturate(8) contrast(75%);
+  
+  width: 80%;
+}
+
+.center-title {
+  font-size: 2rem;
+  font-weight: 900;
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.center {
+  font-weight: 500;
+  position: absolute;
+  font-weight: 700;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.partner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--dark);
+  padding: 2rem 0;
+}
+
+.partner-title {
+  color: var(--light);
+  margin: 0;
+}
+
+.partner-logos {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.partner-logo {
+  margin: 0.5rem 1rem;
+}
+
+.mozilla-logo {
+  color: rgba(255, 255, 255, 0.377);
+  font-family: 'Meta', serif;
+  font-size: xx-large;
+  font-weight: 800;
+}
+
+.google-logo {
+  color: rgba(255, 255, 255, 0.377);
+  font-size: x-large;
+}
+
+.naver-logo {
+  color: rgba(255, 255, 255, 0.377);
+  font-size: xx-large;
+  text-transform: uppercase;
+  font-family: 'Futura', sans-serif;
+  font-weight: 900;
+}
+
+.daumkakao-logo {
+  color: rgba(255, 255, 255, 0.377);
+  font-size: x-large;
+}
+
+.airbnb-logo {
+  width: 8rem;
+}
+
+.copyrights {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  padding: 2.5rem;
+  font-weight: 600;
+}
+
+.copyright-logo {
+  width: 50%;
+  height: 100%;
+}
