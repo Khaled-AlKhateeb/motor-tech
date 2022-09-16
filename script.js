@@ -10,7 +10,7 @@ const speakerList = document.getElementById("speakerList");
 
 function createSpeaker() {
   data.forEach((element) => {
-    const speakerItem = document.createElement("li");
+    const speakerItem = document.createElement("div");
     const speakerGraphic = document.createElement("div");
     const chequeredFlag = document.createElement("img");
     const carsLogo = document.createElement("img");

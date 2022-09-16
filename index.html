@@ -14,6 +14,13 @@
   <body>
     <div class="main-container">
       <header class="main-header">
+        <div class="media-bar">
+          <img class="media-img" src="Assets/facebook-icon.png" alt="">
+          <img class="media-img" src="Assets/twitter.png" alt="">
+          <button class="media-btn">English</button>
+          <button class="media-btn">My Page</button>
+          <button class="media-btn">Logout</button>
+        </div>
         <nav class="navigation">
           <a class="logo-link" href="#"
             ><img
@@ -22,7 +29,7 @@
               alt="motor tech logo"
           /></a>
           <button class="menu-btn" onclick="openNav()">
-            <i class="fa-solid fa-3x fa-car"></i>
+            <i class="fa-solid fa-3x fa-bars"></i>
           </button>
           <ul id="navList" class="nav-list">
             <li class="nav-item">
@@ -40,6 +47,7 @@
             <li class="nav-item"><a href="#">Join</a></li>
             <li class="nav-item"><a href="#">Sponsor</a></li>
             <li class="nav-item"><a href="#">News</a></li>
+            <li class="btn"><a href="#">Motor-Tech</a></li>
           </ul>
         </nav>
         <div class="header-content">
@@ -57,8 +65,8 @@
       <section class="main-program">
         <h2 class="program-title">Main Program</h2>
         <hr class="program-divider" />
-        <ul class="program-list">
-          <li class="program-item">
+        <article class="program-list">
+          <div class="program-item">
             <div class="mini-program">
               <i class="p-icon fa-solid fa-gas-pump"></i>
               <h3 class="p-item-title">breakfast</h3>
@@ -66,8 +74,8 @@
             <p class="program-description">
               Kick off the Show with the hottest new product award winners as well as the presentation of the Manufacturer of the Year and the Channel Partner of the year awards.
             </p>
-          </li>
-          <li class="program-item">
+          </div>
+          <div class="program-item">
             <div class="mini-program">
               <i class="p-icon fa-solid fa-warehouse"></i>
               <h3 class="p-item-title">awards banquet</h3>
@@ -75,8 +83,8 @@
             <p class="program-description">
               The Motor-Tech Show Industry Awards Banquet is the annual celebration of the specialty-equipment industry and is highlighted by top-flight entertainment.
             </p>
-          </li>
-          <li class="program-item">
+          </div>
+          <div class="program-item">
             <div class="mini-program">
               <i class="p-icon fa-solid fa-car-battery"></i>
               <h3 class="p-item-title">launch pad</h3>
@@ -84,8 +92,8 @@
             <p class="program-description">
               New and recently introduced automotive-related products are pitched in the industry's most prestigious product development competition during the Motor-Tech Show to a panel of iconic judges.
             </p>
-          </li>
-          <li class="program-item">
+          </div>
+          <div class="program-item">
             <div class="mini-program">
               <i class="p-icon fa-solid fa-gears"></i>
               <h3 class="p-item-title">celebrity appearances</h3>
@@ -93,8 +101,8 @@
             <p class="program-description">
               Find out where and when your favorite celebrities are appearing at the Motor-Tech Show.
             </p>
-          </li>
-          <li class="program-item">
+          </div>
+          <div class="program-item">
             <div class="mini-program">
               <i class="p-icon fa-solid fa-gauge"></i>
               <h3 class="p-item-title">builders battle</h3>
@@ -102,16 +110,16 @@
             <p class="program-description">
               Motor-Tech Battle of the Builders® is a competition that recognizes and celebrates the accomplishments of Motor-Tech vehicle builders.
             </p>
-          </li>
-        </ul>
+          </div>
+        </article>
         <button class="join-btn">Attend Motor-Tech Show 2022</button>
         <a href="#" class="full-program">see the whole program</a>
       </section>
       <section class="speakers">
         <h2 class="speakers-title">Featured Manufacturers</h2>
         <hr class="speakers-divider">
-        <ul id="speakerList" class="speakers-list">
-        </ul>
+        <article id="speakerList" class="speakers-list">
+        </article>
         <button onclick="moreBtn()" type="button" id="moreBtn" class="more-btn">More<i id="chevron" class="fa-solid fa-chevron-down"></i>
         </button>
       </section>
