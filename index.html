@@ -14,6 +14,13 @@
   <body>
     <div class="main-container">
       <header class="main-header">
+        <div class="media-bar">
+          <img class="media-img" src="Assets/facebook-icon.png" alt="">
+          <img class="media-img" src="Assets/twitter.png" alt="">
+          <button class="media-btn">English</button>
+          <button class="media-btn">My Page</button>
+          <button class="media-btn">Logout</button>
+        </div>
         <nav class="navigation">
           <a class="logo-link" href="#"
             ><img
@@ -22,7 +29,7 @@
               alt="motor tech logo"
           /></a>
           <button class="menu-btn" onclick="openNav()">
-            <i class="fa-solid fa-3x fa-car"></i>
+            <i class="fa-solid fa-3x fa-bars"></i>
           </button>
           <ul id="navList" class="nav-list">
             <li class="nav-item">
@@ -40,83 +47,80 @@
             <li class="nav-item"><a href="#">Join</a></li>
             <li class="nav-item"><a href="#">Sponsor</a></li>
             <li class="nav-item"><a href="#">News</a></li>
+            <li class="btn"><a href="#">Motor-Tech</a></li>
           </ul>
         </nav>
         <div class="header-content">
-          <span class="welcome-title">"Hello! Sharing world"</span>
-          <h1 class="main-title">creative commons global summit 2015</h1>
+          <span class="welcome-title">"Technology served on Wheels"</span>
+          <h1 class="main-title">Motor Technology show 2022</h1>
           <p class="main-description">
-            A joyful celebration believing in the value of openness and sharing,
-            creating a positive change with people from over 80 countries is
-            taking place on October, in Korea.
+            There is no other trade show where you can see thousands of product innovations from new and iconic exhibitors, experience the latest product and custom vehicle trends, get access to 70+ free professional skill-enhancing education sessions and make career-changing connections with peers, leaders, and celebrities at the industry's most anticipated in-person networking event.
           </p>
-          <h2 class="event-title">2015.10.15(THU) ~ 16(FRI)</h2>
+          <h2 class="event-title">2022.10.15(SAT) ~ 16(SUN)</h2>
           <p class="event-description">
-            @ National Museum of Korea, Art Center Nabi and more
+            LAS VEGAS CONVENTION CENTER
           </p>
         </div>
       </header>
       <section class="main-program">
         <h2 class="program-title">Main Program</h2>
         <hr class="program-divider" />
-        <ul class="program-list">
-          <li class="program-item">
+        <article class="program-list">
+          <div class="program-item">
             <div class="mini-program">
               <i class="p-icon fa-solid fa-gas-pump"></i>
-              <h3 class="p-item-title">news</h3>
+              <h3 class="p-item-title">breakfast</h3>
             </div>
-            <p class="program-description">Listen to the speakers from various vountries about the messeges of sharing and opening</p>
-          </li>
-          <li class="program-item">
+            <p class="program-description">
+              Kick off the Show with the hottest new product award winners as well as the presentation of the Manufacturer of the Year and the Channel Partner of the year awards.
+            </p>
+          </div>
+          <div class="program-item">
             <div class="mini-program">
               <i class="p-icon fa-solid fa-warehouse"></i>
-              <h3 class="p-item-title">gallary</h3>
+              <h3 class="p-item-title">awards banquet</h3>
             </div>
-            <p class="program-description">Appreciate varius creations applying CC license of artists, organized from Art Center Nabi</p>
-          </li>
-          <li class="program-item">
+            <p class="program-description">
+              The Motor-Tech Show Industry Awards Banquet is the annual celebration of the specialty-equipment industry and is highlighted by top-flight entertainment.
+            </p>
+          </div>
+          <div class="program-item">
             <div class="mini-program">
               <i class="p-icon fa-solid fa-car-battery"></i>
-              <h3 class="p-item-title">car culture</h3>
+              <h3 class="p-item-title">launch pad</h3>
             </div>
-            <p class="program-description">Have the time to share your thoughts and opinions with experts for each topic</p>
-          </li>
-          <li class="program-item">
+            <p class="program-description">
+              New and recently introduced automotive-related products are pitched in the industry's most prestigious product development competition during the Motor-Tech Show to a panel of iconic judges.
+            </p>
+          </div>
+          <div class="program-item">
             <div class="mini-program">
               <i class="p-icon fa-solid fa-gears"></i>
-              <h3 class="p-item-title">gear</h3>
+              <h3 class="p-item-title">celebrity appearances</h3>
             </div>
-            <p class="program-description">Try creating your own work using open source license rather than just watching</p>
-          </li>
-          <li class="program-item">
+            <p class="program-description">
+              Find out where and when your favorite celebrities are appearing at the Motor-Tech Show.
+            </p>
+          </div>
+          <div class="program-item">
             <div class="mini-program">
               <i class="p-icon fa-solid fa-gauge"></i>
-              <h3 class="p-item-title">racing</h3>
+              <h3 class="p-item-title">builders battle</h3>
             </div>
-            <p class="program-description">Get opportunities to network with CC affiliates around the world, also after the summit.</p>
-          </li>
-        </ul>
-        <button class="join-btn">Join CC Global Summit 2015</button>
+            <p class="program-description">
+              Motor-Tech Battle of the Builders® is a competition that recognizes and celebrates the accomplishments of Motor-Tech vehicle builders.
+            </p>
+          </div>
+        </article>
+        <button class="join-btn">Attend Motor-Tech Show 2022</button>
         <a href="#" class="full-program">see the whole program</a>
       </section>
       <section class="speakers">
-        <h2 class="speakers-title">Featured Speakers</h2>
+        <h2 class="speakers-title">Featured Manufacturers</h2>
         <hr class="speakers-divider">
-        <ul class="speakers-list">
-          <li class="speakers-item">
-            <div class="speakers-graphic">
-              <img class="chequered-flag" src="Assets/f1-fin.gif" alt="chequered flag">
-              <img class="cars-logo" src="Assets/koeingsegg-logo.jpg" alt="koenigsegg logo">
-            </div>
-            <div class="speakers-text">
-              <h3 class="speaker-name">Yochai Benkler</h3>
-              <h4 class="speaker-info">Berkman Professor of Enterpreneurial Legal Studies at Harvard Law School</h4>
-              <hr class="speaker-divider">
-              <p class="speaker-bio">Benkler studies commons-based peer production, and published hos seminal book The Wealth of Networks in 2006</p>
-            </div>
-          </li>
-        </ul>
-        <button class="more-btn">More<i class="fa-solid fa-chevron-down"></i>
+        <article id="speakerList" class="speakers-list">
+        </article>
+        <button onclick="moreBtn()" type="button" id="moreBtn" class="more-btn">More<i id="chevron" class="fa-solid fa-chevron-down"></i>
         </button>
       </section>
       <footer class="footer">
@@ -136,11 +140,12 @@
           </div>
         </div>
         <div class="copyrights">
-          <img class="copyright-logo" src="Assets/korea-logo.png" alt="logo">
-          <p class="copyright-text">2015 Creative Commons Korea Some Rights Reserved.</p>
+          <img class="copyright-logo" src="Assets/motortech-logo.png" alt="logo">
+          <p class="copyright-text">2022 Motor-Tech Show Some Rights Reserved.</p>
         </div>
       </footer>
     </div>
+    <script src="data.js"></script>
     <script src="script.js"></script>
   </body>
 </html>

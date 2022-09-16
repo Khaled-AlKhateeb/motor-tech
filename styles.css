@@ -24,6 +24,10 @@ li {
   flex-direction: column;
 }
 
+.media-bar {
+  display: none;
+}
+
 .main-header {
   background-image: url(Assets/motor-tech-background.jpg);
   background-size: cover;
@@ -95,6 +99,10 @@ li {
   color: var(--primary);
 }
 
+.btn {
+  display: none;
+}
+
 .header-content {
   display: flex;
   flex-direction: column;
@@ -114,6 +122,7 @@ li {
   background-image: url(Assets/wallpaperflare.com_wallpaper.jpg);
   background-position: right -350px top -520px;
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
   text-transform: uppercase;
 }
@@ -133,6 +142,7 @@ li {
   color: var(--light);
   margin-top: 1.5rem;
   margin-bottom: 0.5rem;
+  text-shadow: 2px 2px black, 2px 2px white;
 }
 
 .event-description {
@@ -140,6 +150,7 @@ li {
   font-weight: 500;
   color: var(--light);
   margin: 0;
+  text-shadow: 2px 2px black, 2px 2px white;
 }
 
 .main-program {
@@ -177,6 +188,10 @@ li {
   color: var(--light);
 }
 
+.program-item:hover {
+  border: 2px solid var(--primary);
+}
+
 .mini-program {
   max-width: 11rem;
   display: grid;
@@ -186,7 +201,7 @@ li {
 }
 
 .p-icon {
-  width: 6rem;
+  width: 3rem;
   font-size: 3rem;
   color: var(--light);
   text-align: center;
@@ -194,7 +209,7 @@ li {
 }
 
 .p-item-title {
-  width: 4rem;
+  width: 7rem;
   text-transform: uppercase;
   color: var(--primary);
   font-size: 1.2rem;
@@ -210,7 +225,7 @@ li {
   margin: 3rem;
   background-color: var(--primary);
   border: none;
-  color: var(--light);
+  color: white;
   padding: 2rem 2.5rem;
   font-size: 24px;
 }
@@ -238,37 +253,44 @@ li {
 }
 
 .speakers-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
   padding: 0;
 }
 
 .speakers-item {
   display: flex;
+  justify-content: space-between;
 }
 
 .speakers-graphic {
   position: relative;
   top: 0;
   left: 0;
+  z-index: -1;
 }
 
 .chequered-flag {
   position: relative;
   top: 0;
-  width: 6rem;
+  width: 3rem;
   left: 0;
 }
 
 .cars-logo {
   position: absolute;
-  top: 20px;
-  left: 20px;
-  width: 10rem;
+  top: 12px;
+  left: 12px;
+  height: auto;
+  max-width: 6rem;
 }
 
 .speakers-text {
+  width: 70%;
   display: flex;
   flex-direction: column;
-  margin-left: 7rem;
+  margin-left: 1rem;
 }
 
 .speaker-name {
@@ -303,7 +325,7 @@ li {
   text-transform: uppercase;
 }
 
-.fa-chevron-down {
+.fa-chevron-down, .fa-chevron-up{
   padding-left: 1rem;
   color: var(--primary);
 }
@@ -356,6 +378,7 @@ li {
 
 .event-mail {
   display: block;
+  text-decoration: underline;
 }
 
 .about-sec {
@@ -402,8 +425,11 @@ li {
 
 .past-img {
   filter: sepia(80%) hue-rotate(320deg) saturate(8) contrast(75%);
-
   width: 80%;
+}
+
+.past-img:hover {
+  filter: none;
 }
 
 .center-title {
@@ -486,16 +512,30 @@ li {
   font-weight: 600;
 }
 
-.copyright-logo {
+.copyright-logo, .copyright-logo-about {
   width: 50%;
   height: 100%;
 }
 
-.copyright-logo-dark-about {
-  display: none;
-}
-
 @media screen and (min-width: 768px) {
+  .media-bar {
+    display: flex;
+    justify-content: flex-end;
+    padding: 0.5rem 8rem;
+    gap: 1rem;
+    background-color: var(--dark);
+  }
+
+  .media-img {
+    margin: 0 0.3rem;
+  }
+
+  .media-btn {
+    border: none;
+    background-color: var(--dark);
+    color: white;
+  }
+
   .navigation {
     position: relative;
     background-color: white;
@@ -531,6 +571,18 @@ li {
     display: flex;
   }
 
+  .btn {
+    display: flex;
+    margin: auto 2rem;
+    color: var(--primary);
+    padding: 0.6rem;
+  }
+  
+  .btn:hover {
+    font-weight: 700;
+    border: 3px solid var(--primary);
+  }
+
   .menu-close {
     display: none;
   }
@@ -546,9 +598,14 @@ li {
     gap: 0;
   }
 
+  .program-item:hover {
+    border: 2px solid var(--light);
+  }
+
   .mini-program {
     display: flex;
     flex-direction: column;
+    height: 8rem;
     gap: 0;
   }
 
@@ -576,6 +633,25 @@ li {
     text-transform: uppercase;
   }
   
+  .speakers-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .speakers-item {
+    width: 45%;
+    margin: auto;
+  }
+
+  .cars-logo {
+    width: 5rem;
+    height: auto;
+  }
+
+  .speakers-text {
+   margin-left: 1.5rem;
+  }
+
   .more-btn {
     display: none;
   }
@@ -590,8 +666,7 @@ li {
   }
 
   .copyright-logo {
-    height: auto;
-    width: auto;
+    width: 20%;
   }
 
   .welcome-title-about {
@@ -637,10 +712,6 @@ li {
   }
 
   .copyright-logo-about {
-    display: none;
-  }
-
-  .copyright-logo-dark-about {
-    display: block;
+    width: 30%;
   }
 }
