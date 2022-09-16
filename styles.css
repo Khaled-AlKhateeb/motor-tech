@@ -24,6 +24,10 @@ li {
   flex-direction: column;
 }
 
+.media-bar {
+  display: none;
+}
+
 .main-header {
   background-image: url(Assets/motor-tech-background.jpg);
   background-size: cover;
